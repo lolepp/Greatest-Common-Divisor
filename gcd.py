@@ -24,12 +24,12 @@ def main():
     running = True
     while running:
         whichEuklid = input("What Euklidean Algorithm do you want to execute?\nType n for the normal one, e for the extended one.\nEnter anything else to exit. (n/e/...) ")
-        if whichEuklid == 'n':
+        if whichEuklid == 'n' or 'N':
             print("You are calling the normal euklidean algorithm.")
             a = int(input("Your a for the normal euklidean algorithm: "))
             b = int(input("Your b for the normal euklidean algorithm: "))
             print(euklid(a, b))
-        elif whichEuklid == 'e':
+        elif whichEuklid == 'e' or 'E':
             print("You are calling the extended euklidean algorithm.")
             a = int(input("Your a for the extended euklidean algorithm: "))
             b = int(input("Your b for the extended euklidean algorithm: "))
